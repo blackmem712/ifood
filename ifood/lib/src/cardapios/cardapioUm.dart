@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:ifood/src/contador.dart';
 
 class PageCardapioUm extends StatefulWidget {
   @override
@@ -12,6 +13,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
   void incrementarContador() {
     setState(() {
       contador++;
+      contadorIni = contador;
     });
   }
 
@@ -22,33 +24,27 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
         //cria uma lista
         children: [
           GestureDetector(
-            onTap:incrementarContador,    
+            onTap: incrementarContador,
             child: Container(
               height: 100,
               color: Colors.white54,
               child: Row(
                 children: [
-                  Image.asset('assets/rest1.png'),
-                  const SizedBox(
-                      width: 8), 
-                      
-                      const Text(
-                        'marmitex simples',
-                        textAlign:TextAlign.center,
-                        style: TextStyle(
-                        fontSize:20,
-                        color: Colors.black
-                        ),
-                      ) ,
-                    // Espaçamento entre a imagem e o rótulo
-                 Text(
-                    'unidades para pedido: $contador',
-                    textAlign: TextAlign.right,
-                    style: const TextStyle(
-                        fontSize: 10, 
-                        color: Color.fromARGB(255, 243, 8, 8)
-                        ),
-                  )
+                  Image.asset('assets/comidas/comida10.png'),
+                  const SizedBox(width: 8),
+                  const Text(
+                    'marmitex simples',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20, color: Colors.black),
+                  ),
+                  Align(
+                      alignment: Alignment.bottomRight,
+                      child: Text(
+                        'UNIDADE: $contador',
+                        style: const TextStyle(
+                            fontSize: 15,
+                            color: Color.fromARGB(255, 243, 8, 8)),
+                      ))
                 ],
               ),
             ),

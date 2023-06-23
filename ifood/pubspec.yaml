@@ -53,8 +53,10 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
-    - "assets/rest1.png"
-    - "assets/rest2.png"
+    - "assets/restaurantes/rest1.png"
+    - "assets/restaurantes/rest2.png"
+    - "assets/comidas/comida10.png"
+
 
    
     

@@ -30,7 +30,7 @@ class HomeDois  extends StatelessWidget {
           body:  TabBarView(
             children: [  
               PageCardapioUm(),
-              PageTotal(),
+                PageTotal(),
 
             ],
           ),

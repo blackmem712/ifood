@@ -29,7 +29,7 @@ class PageRestaurante extends StatelessWidget {
               color: Colors.white54,           
               child: Row(
                 children: [
-                  Image.asset('assets/rest1.png'),
+                  Image.asset('assets/restaurantes/rest1.png'),
                   const SizedBox(
                       width: 8), // Espaçamento entre a imagem e o rótulo
                   const Text('Bistro'), 
@@ -54,7 +54,7 @@ class PageRestaurante extends StatelessWidget {
               color: Colors.white54,           
               child: Row(
                 children: [
-                  Image.asset('assets/rest2.png'),
+                  Image.asset('assets/restaurantes/rest2.png'),
                   const SizedBox(
                       width: 8), // Espaçamento entre a imagem e o rótulo
                   const Text('Mc donalts'), 
