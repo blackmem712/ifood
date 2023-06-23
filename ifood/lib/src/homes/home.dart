@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ifood/src/cardapio.dart';
+import 'package:ifood/src/restaurante.dart';
+
 
 class Home  extends StatelessWidget {
   const Home({super.key});
@@ -9,7 +10,7 @@ class Home  extends StatelessWidget {
     return MaterialApp(
       title: 'IFOOD',
       home: DefaultTabController(
-        length: 3,
+        length: 1,
         child: Scaffold(
           appBar: AppBar(
             title: const Text('IFOOD'),
@@ -18,16 +19,15 @@ class Home  extends StatelessWidget {
             bottom: const TabBar(
               indicatorColor: Colors.white,
               tabs: [
-                Tab(text: 'cardapio ', icon: Icon(Icons.favorite)),
-                Tab(text: 'informações', icon: Icon(Icons.search)),
+                Tab(text: 'restaurantes ', icon: Icon(Icons.favorite)),
+                
               ],
             ),
           ),
           body: const TabBarView(
             children: [  
-              PageCardapio(),
-            
-            
+              PageRestaurante(),
+        
             ],
           ),
         ),

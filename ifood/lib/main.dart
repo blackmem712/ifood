@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ifood/src/home.dart';
-import 'src/login.dart';
-import 'src/cadastro.dart';
+import 'package:ifood/src/homes/home.dart';
+import 'package:ifood/src/homes/homedois.dart';
+import 'src/login/login.dart';
+import 'src/login/cadastro.dart';
 
 
 void main() {
@@ -15,12 +16,16 @@ class MeuApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/login': (context) => const PageLogin(),
+        '/login': (context) => const PageLogin(), 
+        '/homedois': (context) => const HomeDois(),
+        '/home': (context) => const Home(), 
         '/cadastro': (context) => const PageCadastro(),
-        '/home': (context) => const Home(),
+        
         
       },
       initialRoute: '/login',
+      
+
     );
   }
 }
