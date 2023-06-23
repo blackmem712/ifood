@@ -9,8 +9,14 @@ class PageRestaurante extends StatelessWidget {
     return Scaffold( 
        //cria uma lista
       body: ListView(
-      
+    
+
         children: [
+
+          //////////////////////////////////////////////
+          ////// 1 restaurante da lista /////////////////////
+          ////////////////////////////////////////////////
+          ///
           GestureDetector(
             onTap: () {
               Navigator.push(
@@ -18,30 +24,50 @@ class PageRestaurante extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => const HomeDois()),
               );
             },
-            child: SizedBox(
-              height: 100,
+            child: Container( 
+              height:100,
+              color: Colors.white54,           
               child: Row(
                 children: [
                   Image.asset('assets/rest1.png'),
                   const SizedBox(
                       width: 8), // Espaçamento entre a imagem e o rótulo
-                  const Text('Bistro'),
+                  const Text('Bistro'), 
                 ],
               ),
-            ),
+            ),  
           ),
-          Container(
-            height: 100,
-            child: Row(
-              children: [
-                Image.asset('assets/rest2.png'),
-                const SizedBox(
-                    width: 8), // Espaçamento entre a imagem e o rótulo
-                const Text('mc donalts'),
-              ],
-            ),
-          )
-        ],
+
+          /////////////////////////////////////////////
+          ////// 2 restaurante a lista/////////////////
+          //////////////////////////////////////////////
+          
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const HomeDois()),
+              );
+            },
+            child: Container( 
+              height:100,
+              color: Colors.white54,           
+              child: Row(
+                children: [
+                  Image.asset('assets/rest2.png'),
+                  const SizedBox(
+                      width: 8), // Espaçamento entre a imagem e o rótulo
+                  const Text('Mc donalts'), 
+                ],
+              ),
+            ),  
+          ),
+
+
+
+
+
+        ],       
       ),
     );
   }

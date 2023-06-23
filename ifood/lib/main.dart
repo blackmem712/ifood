@@ -23,7 +23,7 @@ class MeuApp extends StatelessWidget {
         
         
       },
-      initialRoute: '/login',
+      initialRoute: '/home',
       
 
     );
