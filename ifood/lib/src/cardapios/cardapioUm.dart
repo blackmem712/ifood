@@ -52,6 +52,8 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
       body: ListView(
         //cria uma lista
         children: [
+
+          /// 1 item ///
           GestureDetector(
             onTap: incrementarContador1,
             child: Container(
@@ -64,7 +66,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
                  const Align(
                     alignment:Alignment.center,
                       child : Text(
-                    'MARMITEX SIMPLES',                   
+                    'Marmitex Simples',                   
                     style: TextStyle(
                       fontSize: 20,
                      
@@ -95,6 +97,8 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
               ),
             ),
           ),
+
+          // 2 item //
            GestureDetector(
             onTap: incrementarContador2,
             child: Container(
@@ -105,7 +109,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
                   Image.asset('assets/comidas/comida11.png'),
                   const SizedBox(width: 8),
                   const Text(
-                    'marmitex premiun',
+                    'Marmitex Premiun',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20, color: Colors.black),
                   ),
@@ -121,6 +125,147 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
               ),
             ),
           ),
+
+          // 3 item //
+           GestureDetector(
+            onTap: incrementarContador2,
+            child: Container(
+              height: 100,
+              color: Colors.white54,
+              child: Row(
+                children: [
+                  Image.asset('assets/comidas/comida3.png'),
+                  const SizedBox(width: 8),
+                  const Text(
+                    'Sautee Beef',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20, color: Colors.black),
+                  ),
+                  Align(
+                      alignment: Alignment.bottomRight,
+                      child: Text(
+                        'UNIDADE: $contador2',
+                        style: const TextStyle(
+                            fontSize: 15,
+                            color: Color.fromARGB(255, 243, 8, 8)),
+                      ))
+                ],
+              ),
+            ),
+          ),
+
+          // 4 item //
+           GestureDetector(
+            onTap: incrementarContador2,
+            child: Container(
+              height: 100,
+              color: Colors.white54,
+              child: Row(
+                children: [
+                  Image.asset('assets/comidas/comida4.png'),
+                  const SizedBox(width: 8),
+                  const Text(
+                    'Lomo Saltado',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20, color: Colors.black),
+                  ),
+                  Align(
+                      alignment: Alignment.bottomRight,
+                      child: Text(
+                        'UNIDADE: $contador2',
+                        style: const TextStyle(
+                            fontSize: 15,
+                            color: Color.fromARGB(255, 243, 8, 8)),
+                      ))
+                ],
+              ),
+            ),
+          ),
+
+          // 5 item //
+           GestureDetector(
+            onTap: incrementarContador2,
+            child: Container(
+              height: 100,
+              color: Colors.white54,
+              child: Row(
+                children: [
+                  Image.asset('assets/comidas/comida5.png'),
+                  const SizedBox(width: 8),
+                  const Text(
+                    'Prato Feito',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20, color: Colors.black),
+                  ),
+                  Align(
+                      alignment: Alignment.bottomRight,
+                      child: Text(
+                        'UNIDADE: $contador2',
+                        style: const TextStyle(
+                            fontSize: 15,
+                            color: Color.fromARGB(255, 243, 8, 8)),
+                      ))
+                ],
+              ),
+            ),
+          ),
+
+          // 6 item //
+           GestureDetector(
+            onTap: incrementarContador2,
+            child: Container(
+              height: 100,
+              color: Colors.white54,
+              child: Row(
+                children: [
+                  Image.asset('assets/comidas/comida6.png'),
+                  const SizedBox(width: 8),
+                  const Text(
+                    'Arroz Recheado',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20, color: Colors.black),
+                  ),
+                  Align(
+                      alignment: Alignment.bottomRight,
+                      child: Text(
+                        'UNIDADE: $contador2',
+                        style: const TextStyle(
+                            fontSize: 15,
+                            color: Color.fromARGB(255, 243, 8, 8)),
+                      ))
+                ],
+              ),
+            ),
+          ),
+
+          // 7 item //
+           GestureDetector(
+            onTap: incrementarContador2,
+            child: Container(
+              height: 100,
+              color: Colors.white54,
+              child: Row(
+                children: [
+                  Image.asset('assets/comidas/comida7.png'),
+                  const SizedBox(width: 8),
+                  const Text(
+                    'P.F Tradicional',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20, color: Colors.black),
+                  ),
+                  Align(
+                      alignment: Alignment.bottomRight,
+                      child: Text(
+                        'UNIDADE: $contador2',
+                        style: const TextStyle(
+                            fontSize: 15,
+                            color: Color.fromARGB(255, 243, 8, 8)),
+                      ))
+                ],
+              ),
+            ),
+          ),
+
         ],
       ),
     );
