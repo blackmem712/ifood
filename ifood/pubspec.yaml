@@ -55,6 +55,12 @@ flutter:
   assets:
     - "assets/restaurantes/rest1.png"
     - "assets/restaurantes/rest2.png"
+    - "assets/restaurantes/rest3.png"
+    - "assets/restaurantes/rest4.png"
+    - "assets/restaurantes/rest5.png"
+    - "assets/restaurantes/rest6.png"
+    - "assets/restaurantes/rest7.png"
+    - "assets/restaurantes/rest8.png"
     - "assets/comidas/comida10.png"
 
 
