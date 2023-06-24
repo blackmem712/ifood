@@ -55,7 +55,7 @@ class _PageTotalState extends State<PageTotal> {
                     style: TextStyle(fontSize: 20, color: Colors.black),
                   ),
                   Align(
-                      alignment: Alignment.bottomRight,
+                      alignment: Alignment.bottomLeft,
                       child: Text(
                         '$contadorIni2',
                         style: const TextStyle(

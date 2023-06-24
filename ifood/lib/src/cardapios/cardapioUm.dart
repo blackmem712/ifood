@@ -13,6 +13,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
   int contador3 = 0;
   int contador4 = 0;
   int contador5 = 0;
+  
 
 
 
@@ -60,19 +61,36 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
                 children: [
                   Image.asset('assets/comidas/comida10.png'),
                   const SizedBox(width: 8),
-                  const Text(
-                    'marmitex simples',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
-                  Align(
-                      alignment: Alignment.bottomRight,
+                 const Align(
+                    alignment:Alignment.center,
+                      child : Text(
+                    'MARMITEX SIMPLES',                   
+                    style: TextStyle(
+                      fontSize: 20,
+                     
+                      color: Colors.black),
+                  )),
+                  
+                   const Align(   
+                       alignment:Alignment.centerRight,           
+                      child: Text(
+                        '15,00',
+                        style:  TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      )
+                      ),                
+                  Align(   
+                       alignment:Alignment.bottomRight,           
                       child: Text(
                         'UNIDADE: $contador1',
                         style: const TextStyle(
                             fontSize: 15,
                             color: Color.fromARGB(255, 243, 8, 8)),
-                      ))
+                      )
+                      ),
+                    
                 ],
               ),
             ),
