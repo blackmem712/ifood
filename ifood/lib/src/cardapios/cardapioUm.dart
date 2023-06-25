@@ -28,7 +28,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
     setState(() {
       contador1++;
       contadorIni1 = contador1;
-      mostrarfin1 = mostrar1;
+      mostrarfin1 = contador1 * preco1;
       mostrar1 = contador1 * preco1;
     });
   }
@@ -37,7 +37,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
     setState(() {
       contador2++;
       contadorIni2 = contador2;
-      mostrarfin2 = mostrar2;
+      mostrarfin2 = contador2 * preco2;
       mostrar2 = contador2 * preco2;
     });
   }
@@ -46,7 +46,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
     setState(() {
       contador3++;
       contadorIni3 = contador3;
-      mostrarfin3 = mostrar3;
+      mostrarfin3 = contador3* preco3;
       mostrar3 = contador3* preco3;
     });
   }
@@ -55,7 +55,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
     setState(() {
       contador4++;
       contadorIni4 = contador4;
-      mostrarfin4 = mostrar4;
+      mostrarfin4 = contador4 * preco4;
       mostrar4 = contador4 * preco4;
     });
   }
@@ -64,7 +64,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
     setState(() {
       contador5++;
       contadorIni5 = contador5;
-      mostrarfin5 = mostrar5;
+      mostrarfin5 = contador5 * preco5;
       mostrar5 = contador5 * preco5;
     });
   }
@@ -75,7 +75,9 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
       body: ListView(
         //cria uma lista
         children: [
+
           /// 1 item ///
+          
           GestureDetector(
             onTap: incrementarContador1,
             child: Container(
@@ -118,6 +120,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
           ),
 
           // 2 item //
+
           GestureDetector(
             onTap: incrementarContador2,
             child: Container(
@@ -159,7 +162,8 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
             ),
           ),
 
-          // 3 item //
+          ////// 3 item ////////
+
           GestureDetector(
             onTap: incrementarContador3,
             child: Container(
@@ -201,9 +205,10 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
             ),
           ),
 
+       /////// item 4 ////// 
+       
           GestureDetector(
-            onTap: incrementarContador4,
-            
+            onTap: incrementarContador4,           
             child: Container(
               height: 100,
               color: Colors.white54,
@@ -244,6 +249,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
           ),
 
           // 5 item //
+          
           GestureDetector(
             onTap: incrementarContador5,
             child: Container(

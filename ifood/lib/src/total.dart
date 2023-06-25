@@ -4,52 +4,68 @@ import 'contador.dart';
 
 class PageTotal extends StatefulWidget {
   @override
- 
   _PageTotalState createState() => _PageTotalState();
 }
 
 class _PageTotalState extends State<PageTotal> {
- bool exibirContainer = false;
-  
-@override
- 
- 
- Widget build(BuildContext context) {
+  int total =
+      mostrarfin1 + mostrarfin2 + mostrarfin3 + mostrarfin4 + mostrarfin5;
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
         //cria uma lista
         children: [
+          ///////////////
           /// 1 item ///
-          ///
-          if(contadorIni1 > 0)...[
-            
-             Container(
+          /////////////
+
+          if (contadorIni1 > 0) ...[
+            Container(
               height: 100,
               color: Colors.white54,
               child: Row(
                 children: [
                   Image.asset('assets/comidas/comida10.png'),
                   const SizedBox(width: 8),
-                  const Text(
-                    'marmitex simples',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
+                  const Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        'Marmitex Simples',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      )),
+                  const SizedBox(width: 20),
+                  Align(
+                      alignment: Alignment.centerRight,
+                      child: Text(
+                        '$mostrarfin1,00',
+                        style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      )),
                   Align(
                       alignment: Alignment.bottomRight,
                       child: Text(
-                        '$contadorIni1',
+                        'UN: $contadorIni1',
                         style: const TextStyle(
-                            fontSize: 21,
+                            fontSize: 15,
                             color: Color.fromARGB(255, 243, 8, 8)),
-                      ))
+                      )),
                 ],
               ),
             ),
-          ], 
-          
-        
-            /// 2 item ///
+          ],
+
+          //////////////
+          /// 2 item //
+          /////////////
+
+          if (contadorIni2 > 0) ...[
             Container(
               height: 100,
               color: Colors.white54,
@@ -57,155 +73,189 @@ class _PageTotalState extends State<PageTotal> {
                 children: [
                   Image.asset('assets/comidas/comida11.png'),
                   const SizedBox(width: 8),
-                  const Text(
-                    'marmitex premiun',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
-                  Align(
-                      alignment: Alignment.bottomLeft,
+                  const Align(
+                      alignment: Alignment.center,
                       child: Text(
-                        '$contadorIni2',
+                        'Marmitex Premiun',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      )),
+                  const SizedBox(width: 20),
+                  Align(
+                      alignment: Alignment.centerRight,
+                      child: Text(
+                        '$mostrarfin2,00',
                         style: const TextStyle(
-                            fontSize: 21,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      )),
+                  Align(
+                      alignment: Alignment.bottomRight,
+                      child: Text(
+                        'UN: $contadorIni2',
+                        style: const TextStyle(
+                            fontSize: 15,
                             color: Color.fromARGB(255, 243, 8, 8)),
-                      ))
+                      )),
                 ],
               ),
             ),
+          ],
 
-            /*
-            /// 3 item ///
+          /////////////
+          ///item 3 ///
+          ////////////
+          if (contadorIni3 > 0) ...[
             Container(
               height: 100,
               color: Colors.white54,
               child: Row(
                 children: [
                   Image.asset('assets/comidas/comida3.png'),
-                  const SizedBox(width: 8),
-                  const Text(
-                    'Saute Beef',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
-                  Align(
-                      alignment: Alignment.bottomLeft,
+                  const SizedBox(width: 9),
+                  const Align(
+                      alignment: Alignment.center,
                       child: Text(
-                        '$contadorIni2',
+                        'Petit Lambo  ',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      )),
+                  const SizedBox(width: 20),
+                  Align(
+                      alignment: Alignment.centerRight,
+                      child: Text(
+                        '            $mostrarfin3,00',
                         style: const TextStyle(
-                            fontSize: 21,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      )),
+                  Align(
+                      alignment: Alignment.bottomRight,
+                      child: Text(
+                        'UN: $contadorIni3',
+                        style: const TextStyle(
+                            fontSize: 15,
                             color: Color.fromARGB(255, 243, 8, 8)),
-                      ))
+                      )),
                 ],
               ),
             ),
+          ],
 
+          ////////////////
+          /// item 4 ////
+          //////////////
 
-          /// 4 item ///
+          if (contadorIni4 > 0) ...[
             Container(
               height: 100,
               color: Colors.white54,
               child: Row(
                 children: [
                   Image.asset('assets/comidas/comida4.png'),
-                  const SizedBox(width: 8),
-                  const Text(
-                    'Lomo Saltado',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
-                  Align(
-                      alignment: Alignment.bottomLeft,
+                  const SizedBox(width: 9),
+                  const Align(
+                      alignment: Alignment.center,
                       child: Text(
-                        '$contadorIni2',
+                        'Lomo Salmado',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      )),
+                  const SizedBox(width: 20),
+                  Align(
+                      alignment: Alignment.centerRight,
+                      child: Text(
+                        '        $mostrarfin4,00',
                         style: const TextStyle(
-                            fontSize: 21,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      )),
+                  Align(
+                      alignment: Alignment.bottomRight,
+                      child: Text(
+                        'UN: $contadorIni4',
+                        style: const TextStyle(
+                            fontSize: 15,
                             color: Color.fromARGB(255, 243, 8, 8)),
-                      ))
+                      )),
                 ],
               ),
             ),
 
+            //////////////
+            ///item 5 ////
+            /////////////
 
-            /// 5 item ///
-            Container(
-              height: 100,
-              color: Colors.white54,
-              child: Row(
-                children: [
-                  Image.asset('assets/comidas/comida5.png'),
-                  const SizedBox(width: 8),
-                  const Text(
-                    'Prato Feito',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
-                  Align(
-                      alignment: Alignment.bottomLeft,
-                      child: Text(
-                        '$contadorIni2',
-                        style: const TextStyle(
-                            fontSize: 21,
-                            color: Color.fromARGB(255, 243, 8, 8)),
-                      ))
-                ],
+            if (contadorIni5 > 0) ...[
+              Container(
+                height: 100,
+                color: Colors.white54,
+                child: Row(
+                  children: [
+                    Image.asset('assets/comidas/comida5.png'),
+                    const SizedBox(width: 9),
+                    const Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          'Arroz Recheado',
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black),
+                        )),
+                    const SizedBox(width: 20),
+                    Align(
+                        alignment: Alignment.centerRight,
+                        child: Text(
+                          '      $mostrarfin5,00',
+                          style: const TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black),
+                        )),
+                    Align(
+                        alignment: Alignment.bottomRight,
+                        child: Text(
+                          'UN: $contadorIni5',
+                          style: const TextStyle(
+                              fontSize: 15,
+                              color: Color.fromARGB(255, 243, 8, 8)),
+                        )),
+                  ],
+                ),
               ),
-            ),
 
-
-            /// 6 item ///
-            Container(
-              height: 100,
-              color: Colors.white54,
-              child: Row(
-                children: [
-                  Image.asset('assets/comidas/comida6.png'),
-                  const SizedBox(width: 8),
-                  const Text(
-                    'Arroz Recheado',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
-                  Align(
-                      alignment: Alignment.bottomLeft,
-                      child: Text(
-                        '$contadorIni2',
-                        style: const TextStyle(
-                            fontSize: 21,
-                            color: Color.fromARGB(255, 243, 8, 8)),
-                      ))
-                ],
+              /////total//////
+              Container(
+                height: 100,
+                color: Colors.white54,
+                child:  Row(
+                  children: [
+                    Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          'TOTAL:$total,00 ',
+                          style: const TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black),
+                        )),
+                  ],
+                ),
               ),
-            ),
-
-            /// 7 item ///
-            Container(
-              height: 100,
-              color: Colors.white54,
-              child: Row(
-                children: [
-                  Image.asset('assets/comidas/comida7.png'),
-                  const SizedBox(width: 8),
-                  const Text(
-                    'P.F Tradicional',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
-                  Align(
-                      alignment: Alignment.bottomLeft,
-                      child: Text(
-                        '$contadorIni2',
-                        style: const TextStyle(
-                            fontSize: 21,
-                            color: Color.fromARGB(255, 243, 8, 8)),
-                      ))
-                ],
-              ),
-            ),*********/
-
+            ]
+          ]
         ],
       ),
     );
   }
 }
-
