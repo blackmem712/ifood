@@ -9,10 +9,10 @@ class PageTotal extends StatefulWidget {
 }
 
 class _PageTotalState extends State<PageTotal> {
- 
+ bool exibirContainer = false;
+  
 @override
  
-  
  
  Widget build(BuildContext context) {
     return Scaffold(
@@ -20,6 +20,9 @@ class _PageTotalState extends State<PageTotal> {
         //cria uma lista
         children: [
           /// 1 item ///
+          ///
+          if(contadorIni1 > 0)...[
+            
              Container(
               height: 100,
               color: Colors.white54,
@@ -43,7 +46,9 @@ class _PageTotalState extends State<PageTotal> {
                 ],
               ),
             ),
-
+          ], 
+          
+        
             /// 2 item ///
             Container(
               height: 100,
