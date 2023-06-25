@@ -21,8 +21,8 @@ class HomeDois  extends StatelessWidget {
             bottom: const TabBar(
               indicatorColor: Colors.white,
               tabs: [
-                Tab(text: 'cardapio', icon: Icon(Icons.favorite)),
-                Tab(text: 'total', icon: Icon(Icons.favorite)),
+                Tab(text: 'cardapio', icon: Icon(Icons.menu_open)),
+                Tab(text: 'total', icon: Icon(Icons.add_shopping_cart_rounded)),
 
               ],
             ),
