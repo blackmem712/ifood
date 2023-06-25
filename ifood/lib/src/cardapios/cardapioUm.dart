@@ -85,7 +85,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
               color: Colors.white54,
               child: Row(
                 children: [
-                  Image.asset('assets/comidas/comida10.png'),
+                  Image.asset('assets/comidas/comida1.png'),
                   const SizedBox(width: 8),
                   const Align(
                       alignment: Alignment.center,
@@ -128,7 +128,7 @@ class _PageCardapioUmState extends State<PageCardapioUm> {
               color: Colors.white54,
               child: Row(
                 children: [
-                  Image.asset('assets/comidas/comida11.png'),
+                  Image.asset('assets/comidas/comida2.png'),
                   const SizedBox(width: 8),
                   const Align(
                       alignment: Alignment.center,

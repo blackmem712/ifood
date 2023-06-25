@@ -30,7 +30,6 @@ class FormCadastro extends StatefulWidget {
 class _FormCadastro extends State<FormCadastro> {
   final _formkey = GlobalKey<FormState>();
 
-  //String nome = '';
 
   @override
   Widget build(BuildContext context) {
@@ -113,12 +112,13 @@ class _FormCadastro extends State<FormCadastro> {
                 backgroundColor: Colors.red,
               ),
             onPressed: () {
-              if (_formkey.currentState!.validate()) {}
-              setState(() {});
-              const snackBar =
+              if (_formkey.currentState!.validate() == true) {
+                setState(() {});
+                const snackBar =
                   SnackBar(content: Text('Cadastro realizado com sucesso!'));
-              ScaffoldMessenger.of(context).showSnackBar(snackBar);
-              Navigator.pushNamed(context, "/login");
+                ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                Navigator.pushNamed(context, "/login");
+              }              
             },
             child: const Text('Cadastrar'),
           ),

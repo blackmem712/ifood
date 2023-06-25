@@ -19,7 +19,7 @@ class Home  extends StatelessWidget {
             bottom: const TabBar(
               indicatorColor: Colors.white,
               tabs: [
-                Tab(text: 'restaurantes ', icon: Icon(Icons.restaurant)),
+                Tab(text: 'Restaurantes ', icon: Icon(Icons.restaurant)),
                 
               ],
             ),

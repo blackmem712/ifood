@@ -71,11 +71,7 @@ class _FormLogin extends State<FormLogin> {
             onPressed: () {
              if (_formkey.currentState!.validate() == true){
                   Navigator.pushNamed(context, '/home');  
-              } 
-              //else {Navigator.pushNamed(context, '/login');}
-
-              /* if (_formkey.currentState!.validate()) {}
-              Navigator.pushNamed(context, '/home');*/
+              }               
             },
             child: const Text('Entrar'),
           ),

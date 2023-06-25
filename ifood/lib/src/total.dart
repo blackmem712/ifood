@@ -27,7 +27,7 @@ class _PageTotalState extends State<PageTotal> {
               color: Colors.white54,
               child: Row(
                 children: [
-                  Image.asset('assets/comidas/comida10.png'),
+                  Image.asset('assets/comidas/comida1.png'),
                   const SizedBox(width: 8),
                   const Align(
                       alignment: Alignment.center,
@@ -71,7 +71,7 @@ class _PageTotalState extends State<PageTotal> {
               color: Colors.white54,
               child: Row(
                 children: [
-                  Image.asset('assets/comidas/comida11.png'),
+                  Image.asset('assets/comidas/comida2.png'),
                   const SizedBox(width: 8),
                   const Align(
                       alignment: Alignment.center,
@@ -243,7 +243,7 @@ class _PageTotalState extends State<PageTotal> {
                     Align(
                         alignment: Alignment.center,
                         child: Text(
-                          'TOTAL:$total,00 ',
+                          'TOTAL: $total,00 ',
                           style: const TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,

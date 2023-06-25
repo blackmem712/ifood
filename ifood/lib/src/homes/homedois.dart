@@ -3,7 +3,6 @@ import 'package:ifood/src/cardapios/cardapioUm.dart';
 import 'package:ifood/src/total.dart';
 
 
-
 class HomeDois  extends StatelessWidget {
   const HomeDois({super.key});
 
@@ -21,8 +20,8 @@ class HomeDois  extends StatelessWidget {
             bottom: const TabBar(
               indicatorColor: Colors.white,
               tabs: [
-                Tab(text: 'cardapio', icon: Icon(Icons.menu_open)),
-                Tab(text: 'total', icon: Icon(Icons.add_shopping_cart_rounded)),
+                Tab(text: 'Cardápio', icon: Icon(Icons.menu_open)),
+                Tab(text: 'Total', icon: Icon(Icons.add_shopping_cart_rounded)),
 
               ],
             ),
@@ -30,8 +29,7 @@ class HomeDois  extends StatelessWidget {
           body:  TabBarView(
             children: [  
               PageCardapioUm(),
-                PageTotal(),
-
+              PageTotal(),
             ],
           ),
         ),
