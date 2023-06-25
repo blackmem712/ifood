@@ -9,6 +9,7 @@ class PageLogin extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Login"),
         centerTitle: true,
+        backgroundColor: const Color.fromARGB(255, 240, 5, 5),
       ),
       body: const Column(
         children: [
@@ -29,8 +30,6 @@ class FormLogin extends StatefulWidget {
 class _FormLogin extends State<FormLogin> {
   final _formkey = GlobalKey<FormState>();
 
-  //bool a = false;
-
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -44,7 +43,7 @@ class _FormLogin extends State<FormLogin> {
             validator: (value) {
               if (value!.isEmpty) {
                 return 'Informe o usuário';
-              }
+              }       
               return null;
             },
           ),
@@ -58,7 +57,7 @@ class _FormLogin extends State<FormLogin> {
             validator: (value) {
               if (value!.isEmpty) {
                 return 'Informe a senha';
-              }
+              } 
               return null;
             },
           ),
@@ -66,9 +65,17 @@ class _FormLogin extends State<FormLogin> {
             height: 20,
           ),
           ElevatedButton(
+            style: TextButton.styleFrom(
+              backgroundColor: Colors.red,
+            ),
             onPressed: () {
-              if (_formkey.currentState!.validate()) {}
-              Navigator.pushNamed(context, '/home');
+             if (_formkey.currentState!.validate() == true){
+                  Navigator.pushNamed(context, '/home');  
+              } 
+              //else {Navigator.pushNamed(context, '/login');}
+
+              /* if (_formkey.currentState!.validate()) {}
+              Navigator.pushNamed(context, '/home');*/
             },
             child: const Text('Entrar'),
           ),
@@ -76,6 +83,9 @@ class _FormLogin extends State<FormLogin> {
             height: 30,
           ),
           ElevatedButton(
+            style: TextButton.styleFrom(
+              backgroundColor: Colors.red,
+            ),
             onPressed: () {
               if (_formkey.currentState!.validate()) {}
               Navigator.pushNamed(context, '/cadastro');

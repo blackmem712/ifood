@@ -9,6 +9,7 @@ class PageCadastro extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Cadastro"),
         centerTitle: true,
+        backgroundColor: const Color.fromARGB(255, 240, 5, 5),
       ),
       body: const Column(
         children: [
@@ -108,6 +109,9 @@ class _FormCadastro extends State<FormCadastro> {
             height: 20,
           ),
           ElevatedButton(
+            style: TextButton.styleFrom(
+                backgroundColor: Colors.red,
+              ),
             onPressed: () {
               if (_formkey.currentState!.validate()) {}
               setState(() {});
