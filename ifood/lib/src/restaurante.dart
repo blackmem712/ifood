@@ -16,7 +16,7 @@ class PageRestaurante extends StatelessWidget {
           //////////////////////////////////////////////
           ////// 1 restaurante da lista /////////////////////
           ////////////////////////////////////////////////
-          ///
+          
           GestureDetector(
             onTap: () {
               Navigator.push(
